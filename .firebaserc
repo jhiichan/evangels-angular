@@ -1,12 +1,12 @@
 {
   "projects": {
-    "default": "evangels-3de8f"
+    "default": "project-lloyd-archives"
   },
   "targets": {
-    "evangels-3de8f": {
+    "project-lloyd-archives": {
       "hosting": {
         "default": [
-          "evangels-3de8f"
+          "evangels-angular"
         ]
       }
     }

@@ -6,7 +6,7 @@ export class HomeService {
     constructor(private firedatabase: AngularFireDatabase) { }
 
     getConfigurations() {
-        const configsRef = this.firedatabase.object('configs').valueChanges();
+        const configsRef = this.firedatabase.object('evangels/configs').valueChanges();
         return configsRef;
     }
 }
