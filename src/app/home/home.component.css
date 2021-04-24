@@ -1,0 +1,36 @@
+.ev-home-contents {
+    padding-top: 5%;
+}
+
+.ev-home-logo-container > .evangels-logo {
+    width: 200px;
+}
+
+.ev-home-logo-container,
+.ev-home-brand-container,
+.ev-home-quote-container,
+.ev-home-buttons-container {
+    text-align: center;
+}
+
+.ev-home-brand-container {
+    margin-top: 20px;
+    font-size: 60px;
+    font-weight: bold;
+    color: #FFFFFF;
+    text-shadow: 0 3px 6px #000000;
+}
+
+.ev-home-quote-container {
+    font-size: 20px;
+    color: #FFFFFF;
+    text-shadow: 0 3px 6px #000000;
+}
+
+.ev-home-buttons-container {
+    margin-top: 30px;
+}
+
+    .ev-home-buttons-container > button {
+        text-transform: uppercase;
+    }

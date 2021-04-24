@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "evangels-3de8f"
+  },
+  "targets": {
+    "evangels-3de8f": {
+      "hosting": {
+        "default": [
+          "evangels-3de8f"
+        ]
+      }
+    }
+  }
+}

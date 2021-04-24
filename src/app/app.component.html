@@ -1,0 +1,15 @@
+<div class="ev-body-container">
+    <!--<app-home (openVideos)="toggleVideos($event)"></app-home>
+    <app-videos [isOpen]="isVideosOpen"></app-videos>-->
+    <div *ngIf="!isHomeRoute()" class="ev-logo-container">
+        <img routerLink="/" src="../assets/logo/evangels_logo_v4.0.png" class="evangels-logo" />
+    </div>
+    <div [@routeAnimations]="prepareRoute(outlet)">
+        <router-outlet #outlet="outlet"></router-outlet>
+    </div>
+    <div class="ev-social-container">
+        <!-- <div class="ev-social-follow-us">Follow Us:</div> -->
+        <a mat-icon-button color="primary" aria-label="Facebook" href="https://www.facebook.com/evangelistangels" target="_blank"><mat-icon>facebook</mat-icon></a>
+        <a mat-icon-button color="primary" aria-label="YouTube" href="https://www.youtube.com/channel/UCMIDvyc2Ytan1imTtae6pcA" target="_blank"><mat-icon>play_circle_filled</mat-icon></a>
+    </div>
+</div>
