@@ -8,7 +8,7 @@ export class VideosService {
 
     getData() {
         const videosRef = this.firedatabase
-            .list<Video>('videos',
+            .list<Video>('evangels/videos',
                 ref => ref.orderByChild('dateCreated'))
             .valueChanges();
         return videosRef;
