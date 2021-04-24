@@ -1,0 +1,15 @@
+<div class="ev-videos-container">
+    <mat-card class="ev-video-card" *ngFor="let video of (videos | async)?.slice().reverse()">
+        <mat-card-header>
+            <mat-card-title matTooltip="{{video.title}}" [matTooltipPosition]="'above'" class="ev-video-card-title">{{video.title}}</mat-card-title>
+            <mat-card-subtitle class="ev-video-card-subtitle">{{video.dateCreated | date}}</mat-card-subtitle>
+        </mat-card-header>
+        <img mat-card-image class="ev-video-card-th" src="{{video.thumbnailUrl}}" alt="{{video.title}}">
+        <mat-card-content class="ev-video-card-desc">
+            <p>{{video.description}}</p>
+        </mat-card-content>
+        <mat-card-actions class="ev-video-card-actions">
+            <a mat-stroked-button color="primary" href="{{video.youTubeUrl}}" target="_blank">View on YouTube <mat-icon>launch</mat-icon></a>
+        </mat-card-actions>
+    </mat-card>
+</div>

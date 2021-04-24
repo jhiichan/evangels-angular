@@ -1,0 +1,23 @@
+<!--<div class="ev-home-container" [@homeOpen]="isOpen ? 'open' : 'closed'">-->
+<div class="ev-home-container">
+    <div class="ev-home-contents">
+        <div class="ev-home-logo-container">
+            <img src="../../assets/logo/evangels_logo_v4.0.png" class="evangels-logo" />
+        </div>
+        <div class="ev-home-brand-container">
+            EvAngels
+        </div>
+        <div class="ev-home-quote-container">
+            Rewind those best moments...
+        </div>
+        <div class="ev-home-buttons-container">
+            <button
+                mat-raised-button routerLink="/videos"
+                color="primary"
+                disabled="{{(configs | async).isSiteUnderConstruction}}"
+            >
+                See Our Videos
+            </button>
+        </div>
+    </div>
+</div>
